@@ -12,11 +12,11 @@
     margin: 0px auto;
 }
 
-.hero-content {
+.performance {
     align-items: center;
 }
 
-.hero-title {
+.performance__title {
     font-style: normal;
     @include fonts(900, 44px, 60px, 0.06em);
     text-align: center;
@@ -28,7 +28,7 @@
     margin-right: auto;
 }
 
-.hero-btn {
+.performance__btn {
     font-family: inherit;
     @include fonts(700, 16px, 30px, 0.06em);
     display: block;

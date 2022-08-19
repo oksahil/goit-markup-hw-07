@@ -8,63 +8,60 @@
         }
 }
 
-.header-logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    @include fonts(700, 26px, 31px, 0.03em);
-    color: #000000;
+.header__logo {
     margin-right: 93px;
 }
 
-.logo-part {
-    color: var(--color-aktive);
-}
+// .logo {
+//     font-family: 'Raleway';
+//     font-style: normal;
+//     @include fonts(700, 26px, 31px, 0.03em);
+//     color: #000000;
+// }
 
-.header-link,
-.header-tel,
-.header-mail {
+// .logo__part {
+//     color: var(--color-aktive);
+// }
+
+.navigation__link,
+.contakty__tel,
+.contakty__mail {
     @include fonts(500, 14px, 16px, 0.02em);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel,
-.header-mail {
+.contakty__tel,
+.contakty__mail {
     color: #757575;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link {
+.navigation__link {
     color: #212121;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
+.navigation__link:hover,
+.navigation__link:focus,
+.contakty__mail:hover,
+.contakty__mail:focus,
+.contakty__tel:hover,
+.contakty__tel:focus {
     color: var(--color-aktive);
 }
 
-.header-tel {
+.contakty__tel {
     margin-left: 50px;
 }
 
-.header-list {
+.navigation__list {
     display: flex;
     gap: 50px;
 }
 
-.header-contakty {
+.header__contakty {
     margin-left: auto;
 }
 
-.mail-icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.tel-icon {
+.contakty__icon {
     margin-right: 10px;
     fill: currentColor;
 }

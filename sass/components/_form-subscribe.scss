@@ -1,20 +1,9 @@
-.footer>.container {
-    display: flex;
-    justify-content: space-between;
-}
 
-.footer-title-subscribe {
-    @include fonts(700, 14px, 16px, 0.03em);
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-}
-
-.footer-subscribe {
+.subscribe {
     padding-top: 72px;
 }
 
-.form-subscribe-email {
+.subscribe__email {
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -32,7 +21,7 @@
             color: rgba(255, 255, 255, 0.6);
         }
 }
-.form-subscribe-btn {
+.subscribe__btn {
     position: relative;
     font-family: inherit;
     @include fonts(700, 16px, 30px, 00.06em);
@@ -54,7 +43,7 @@
                 border-radius: 4px;
             }
 }
-.icon-telegram-btn {
+.subscribe__icon-telegram-btn {
     position: absolute;
     fill: #ffffff;
     top: 50%;

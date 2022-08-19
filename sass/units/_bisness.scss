@@ -8,11 +8,6 @@
     gap: 30px;
 }
 
-.title-second-ind {
-    @include fonts(700, 36px, 42px, 0.03em);
-    text-align: center;
-    color: var(--color-title);
-}
 
 .bisness-title {
     margin-bottom: 50px;
