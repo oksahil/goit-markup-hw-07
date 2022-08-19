@@ -12,19 +12,14 @@
 }
 
 .benefits-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
+    @include fonts(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--color-title);
     margin-bottom: 10px;
 }
 
 .benefits-text {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+    @include fonts(null, 14px, 24px, 0.03em);
     color: var(--color-text);
 }
 
@@ -34,7 +29,5 @@
     background: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
 }

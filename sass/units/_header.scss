@@ -11,10 +11,7 @@
 .header-logo {
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
+    @include fonts(700, 26px, 31px, 0.03em);
     color: #000000;
     margin-right: 93px;
 }
@@ -26,10 +23,7 @@
 .header-link,
 .header-tel,
 .header-mail {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
+    @include fonts(500, 14px, 16px, 0.02em);
 }
 
 .header-tel,

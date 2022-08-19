@@ -20,17 +20,15 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-item-title,
-.team-item-text {
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
 .team-item-title {
     font-weight: 500;
     color: var(--color-title);
+}
+
+.team-item-title,
+.team-item-text {
+    @include fonts(null, 16px, 19px, 0.03em);
+    text-align: center;
 }
 
 .team-item-text {
@@ -59,9 +57,7 @@
     height: 44px;
     border-radius: 50%;
     background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:focus,
         &:hover {

@@ -4,10 +4,7 @@
 }
 
 .footer-title-subscribe {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
+    @include fonts(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #FFFFFF;
@@ -26,29 +23,22 @@
     border-radius: 4px;
     background-color: transparent;
     padding-left: 16px;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
+    @include fonts(null, 16px, 20px, 0.03em);
     color: #FFFFFF;
         &::placeholder {
-            font-size: 16px;
-            line-height: calc(20 / 16);
+            @include fonts(null, 16px, 20px, 0.03em);
             display: flex;
             align-items: center;
-            letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
         }
 }
 .form-subscribe-btn {
     position: relative;
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
+    @include fonts(700, 16px, 30px, 00.06em);
     border-radius: 4px;
     text-align: left;
     padding-left: 28px;
-    letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--color-aktive);
     min-width: 200px;

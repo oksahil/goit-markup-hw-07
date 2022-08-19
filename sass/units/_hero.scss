@@ -18,11 +18,8 @@
 
 .hero-title {
     font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    @include fonts(900, 44px, 60px, 0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
     max-width: 696px;
@@ -33,15 +30,12 @@
 
 .hero-btn {
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
+    @include fonts(700, 16px, 30px, 0.06em);
     display: block;
     margin: 0px auto;
     align-items: center;
     text-align: center;
     border-radius: 4px;
-    letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--color-aktive);
     min-width: 200px;
